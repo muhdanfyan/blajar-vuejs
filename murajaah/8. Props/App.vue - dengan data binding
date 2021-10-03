@@ -1,5 +1,5 @@
 <template>
-  <Header @changeTitle="ubahText" :text="text"/>
+  <Header :text="text"/>
 </template>
 
 <script>
@@ -12,11 +12,6 @@ export default {
   data(){
     return{
       text : "Ahlan Wa Sahlan, ini adalah text dari data binding"
-    }
-  },
-  methods:{
-    ubahText(newText){
-      this.text = newText
     }
   }
   
