@@ -27,18 +27,6 @@ export default {
         ]
       }
   },
-  beforeMount(){
-    console.log("before Mount")
-  },
-  mounted(){
-    console.log("mounted")
-  },
-  beforeCreate(){
-    console.log("before Create")
-  },
-  created(){
-    console.log("Created")
-  },
 }
 </script>
 
