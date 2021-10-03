@@ -1,7 +1,7 @@
+
 <template>
-  <h2>Welcome {{nama}}</h2>
-  <button v-on:click="changeName">Change Name</button>
-  <!-- <button @click="changeName">Change Name</button> -->
+  <!-- <a v-bind:href="url"> Halaman VUEJS</a> -->
+  <a :href="url"> Halaman VUEJS</a>
 </template>
 
 <script>
@@ -10,14 +10,9 @@ export default {
   name: 'App',
   data(){
     return {
-        nama : "Muhdan Fyan",
+        url : "https://v3.vuejs.org/",
       }
   },
-  methods:{
-    changeName(){
-        this.nama = "Joko";
-      }
-  }
 }
 </script>
 

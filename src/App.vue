@@ -1,7 +1,6 @@
 <template>
-  <h2>Welcome {{nama}}</h2>
-  <button v-on:click="changeName">Change Name</button>
-  <!-- <button @click="changeName">Change Name</button> -->
+  <input type="text" v-model="nama" />
+  {{nama}}
 </template>
 
 <script>
@@ -10,14 +9,9 @@ export default {
   name: 'App',
   data(){
     return {
-        nama : "Muhdan Fyan",
+        nama : "Joko",
       }
   },
-  methods:{
-    changeName(){
-        this.nama = "Joko";
-      }
-  }
 }
 </script>
 
